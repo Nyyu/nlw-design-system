@@ -8,3 +8,6 @@
   
 ## 📚 How to use
   You can either use this [link](https://nyyu.github.io/nlw-design-system/) or access through github-pages
+
+## 🖋️ Figma file
+  Design system prototype: [link](https://www.figma.com/file/37FTaVrAe0uLLOElMpkek4/NLW---Design-system?node-id=0%3A1)
