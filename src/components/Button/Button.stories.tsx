@@ -8,7 +8,7 @@ export default {
     children: "Button primary",
   },
   argTypes: {
-    type: {
+    variant: {
       options: ["primary", "secondary", "ghost"],
       control: {
         type: "inline-radio",
@@ -25,20 +25,20 @@ export default {
 export const Primary: StoryObj<ButtonProps> = {
   args: {
     children: "Button",
-    type: "primary",
+    variant: "primary",
   },
 }
 
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     children: "Button",
-    type: "secondary",
+    variant: "secondary",
   },
 }
 
 export const Ghost: StoryObj<ButtonProps> = {
   args: {
     children: "Button",
-    type: "ghost",
+    variant: "ghost",
   },
 }

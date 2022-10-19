@@ -1,23 +1,29 @@
 import { ReactNode } from "react"
-import * as Checkbox from "@radix-ui/react-checkbox"
+import * as CheckboxPrimite from "@radix-ui/react-checkbox"
 
-export interface CheckboxProps {
+export interface CheckboxProps
+  extends CheckboxPrimite.CheckboxProps {
   children: ReactNode
-  isChecked: boolean
+  isChecked?: boolean
 }
 
-export default function index({
+export default function Checkbox({
   children,
   isChecked,
+  ...props
 }: CheckboxProps) {
   return (
-    <Checkbox.Root
+    <CheckboxPrimite.Root
       className="bg-gray-800 w-6 h-6 p-1 rounded flex items-center justify-center"
       checked={isChecked}
+      {...props}
     >
-      <Checkbox.Indicator asChild className="text-cyan-600">
+      <CheckboxPrimite.Indicator
+        asChild
+        className="text-cyan-600"
+      >
         {children}
-      </Checkbox.Indicator>
-    </Checkbox.Root>
+      </CheckboxPrimite.Indicator>
+    </CheckboxPrimite.Root>
   )
 }
